@@ -1,5 +1,7 @@
 import AboutUs from "./components/about-us";
 import Counters from "./components/counters";
+import Dashboard from "./components/dashboard";
+import Footer from "./components/footer";
 import Hero from "./components/hero";
 import Questions from "./components/questions";
 import Solutions from "./components/solutions";
@@ -12,9 +14,10 @@ export default function HomePage() {
       <AboutUs />
       <Counters />
       <Solutions />
+      <Dashboard />
       <Questions />
       <Testimonials />
-      <div className="h-[100dvh] w-full bg-white"></div>
+      <Footer />
     </main>
   );
 }
