@@ -71,4 +71,7 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  .text-gradient {
+    @apply text-transparent bg-gradient-to-br from-white via-white to-white/50 bg-clip-text;
+  }
 }

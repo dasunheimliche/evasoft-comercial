@@ -2,7 +2,13 @@ import HeroBackground from "./hero-background";
 
 export default function Hero() {
   return (
-    <header className="w-full">
+    <header
+      className="w-full sticky inset-0"
+      // style={{
+      //   background:
+      //     "linear-gradient(rgb(7, 57, 64, 0.7) 0%, rgb(0, 0, 0) 49.5%)",
+      // }}
+    >
       <HeroBackground>
         <div className="flex gap-[2.75rem] flex-col items-center z-10 text-white">
           <div className="flex items-center flex-col gap-[1.5625rem]">

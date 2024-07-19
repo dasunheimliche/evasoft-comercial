@@ -1,6 +1,12 @@
 export default function Footer() {
   return (
-    <footer className="z-999 w-full safe-paddings relative mt-auto overflow-hidden bg-black !text-gray-50 py-[2.5rem]">
+    <footer
+      className="z-999 w-full safe-paddings relative mt-auto overflow-hidden  !text-gray-50 py-[2.5rem]"
+      style={{
+        background:
+          "radial-gradient(70% 80% at center 0%, rgba(255, 255, 255, 0.06) 3%, rgba(98, 255, 179, 0) 70%, rgba(98, 255, 179, 0) 100%)",
+      }}
+    >
       <div className="relative mx-auto lg:max-w-none lg:px-8 md:px-4 w-[1296px] px-8 flex justify-between gap-x-10 pb-[51px] pt-10 xl:pt-9 lg:pb-9 sm:py-8 before:absolute before:-left-[20%] before:top-0 before:h-px before:w-[140%] before:opacity-10 before:[mask-image:linear-gradient(90deg,transparent_0%,black_40%,black_60%,transparent_100%);] dark:before:bg-white before:bg-gray-new-10">
         <div className="flex flex-col items-start justify-between max-lg:w-full max-lg:flex-row max-sm:flex-col max-sm:gap-y-5">
           <div className="mb-[30px] flex grow flex-col max-lg:mb-0 max-sm:w-full max-sm:flex-row max-sm:justify-between">

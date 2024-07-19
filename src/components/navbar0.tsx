@@ -43,9 +43,9 @@ function Header() {
     <header aria-label="Primary" className={"fixed top-0 z-40 w-full"}>
       <Container
         className={cn(
-          " flex justify-center",
+          " flex justify-center transition-colors",
           isBackgroundShown
-            ? "bg-[#FFFFFFCC] backdrop-blur-[12px] transition-colors"
+            ? "bg-[hsl(167,90%,4%)]/50 backdrop-blur-md transition-colors"
             : ""
         )}
       >
@@ -73,7 +73,7 @@ function Header() {
                   href={link.href}
                   className={cn(
                     "relative flex h-full items-center p-1 text-sm uppercase text-neutrals-50 after:absolute after:inset-x-0 after:bottom-[12.25%] after:h-px after:scale-x-0 after:bg-gradient-to-r after:from-transparent after:via-neutrals-200 after:to-transparent after:transition-transform hover:after:-scale-x-100 focus-visible:after:-scale-x-100",
-                    isBackgroundShown ? "text-gray-950" : ""
+                    isBackgroundShown ? "text-gray-50" : ""
                   )}
                 >
                   {link.label}
@@ -89,7 +89,7 @@ function Header() {
                 <img
                   src={
                     isBackgroundShown
-                      ? "images/eva-black.png"
+                      ? "images/eva-white.png"
                       : "images/eva-white.png"
                   }
                   className="object-cover h-6"
@@ -104,7 +104,7 @@ function Header() {
                   isGhost
                   className={cn(
                     "rounded-none",
-                    isBackgroundShown ? "text-gray-950 border-gray-950" : ""
+                    isBackgroundShown ? "text-gray-50 border-gray-50" : ""
                   )}
                 >
                   {`CONTACT`}

@@ -1,10 +1,19 @@
+import { cn } from "@/lib/utils";
+
 export default function Counters() {
   return (
-    <div className="w-full h-[13.875rem] bg-[#121212] flex justify-center">
+    <div
+      className={cn(
+        "w-full h-[13.875rem] bg-black flex justify-center",
+        "bg-[hsl(167,90%,4%)]"
+      )}
+    >
       <div className="w-[1296px] flex">
         <div className="w-1/4   py-[1.25rem] px-[3.875rem] flex justify-center items-center">
           <div className="text-white flex flex-col items-center gap-[.3125rem]">
-            <div className="p-[.625rem] text-[2.25rem] font-normal">400+</div>
+            <div className="p-[.625rem] text-[2.25rem] font-normal text-transparent bg-gradient-to-br from-white via-white to-white/50 bg-clip-text">
+              400+
+            </div>
             <div className="p-[.625rem] text-[#9C9C9C] text-[1.125rem] text-center">
               Completed
             </div>
@@ -17,7 +26,9 @@ export default function Counters() {
 
         <div className="w-1/4   px-[3.875rem] flex justify-center items-center">
           <div className="text-white flex flex-col items-center gap-[.3125rem]">
-            <div className="p-[.625rem] text-[2.25rem] font-normal">15+</div>
+            <div className="p-[.625rem] text-[2.25rem] font-normal text-transparent bg-gradient-to-br from-white via-white to-white/50 bg-clip-text">
+              15+
+            </div>
             <div className="p-[.625rem] text-[#9C9C9C] text-[1.125rem]">
               Successful Years
             </div>
@@ -30,7 +41,9 @@ export default function Counters() {
 
         <div className="w-1/4  px-[3.875rem] flex justify-center items-center">
           <div className="text-white flex flex-col items-center gap-[.3125rem]">
-            <div className="p-[.625rem] text-[2.25rem] font-normal">98%</div>
+            <div className="p-[.625rem] text-[2.25rem] font-normal text-transparent bg-gradient-to-br from-white via-white to-white/50 bg-clip-text">
+              98%
+            </div>
             <div className="p-[.625rem] text-[#9C9C9C] text-[1.125rem]">
               Client Retention
             </div>
@@ -43,7 +56,9 @@ export default function Counters() {
 
         <div className="w-1/4 py-[1.25rem] px-[3.875rem] flex justify-center items-center">
           <div className="text-white flex flex-col items-center">
-            <div className="p-[.625rem] text-[2.25rem] font-normal">30+</div>
+            <div className="p-[.625rem] text-[2.25rem] font-normal text-transparent bg-gradient-to-br from-white via-white to-white/50 bg-clip-text">
+              30+
+            </div>
             <div className="p-[.625rem] text-[#9C9C9C] text-[1.125rem]">
               Countries
             </div>
